@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h2 {
+  margin: 10px 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2a363b;
+}
+
+.Container {
+  max-width: 1440px;
+  min-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logout-btn {
+  background-color: #fff;
+  color: #4caf50;
+  border: 2px solid #4caf50;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-weight: 600;
+  display: inline-block;
+  font-size: inherit;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+  min-width: 80px;
+  margin: auto;
+
+  &:hover {
+    background-color: #4caf50;
+    color: white;
+  }
+}
+
+.Loader {
+  margin-top: 30px;
+  &-main {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.centeredDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+form {
+  & label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    width: 400px;
+  }
+
+  & button {
+    background-color: #fff;
+    color: #4caf50;
+    border: 2px solid #4caf50;
+    border-radius: 4px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    min-width: 100px;
+    margin: auto;
+
+    &:hover {
+      background-color: #4caf50;
+      color: white;
+    }
+  }
+  & input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    &:hover {
+      border-color: #45a049;
+    }
+  }
+}
